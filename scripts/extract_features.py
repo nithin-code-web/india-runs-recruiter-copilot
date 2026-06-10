@@ -6,11 +6,11 @@ with open("data/candidates.jsonl", "r", encoding = "utf-8") as f:
     features = {
     "candidate_id": candidate["candidate_id"],
 
-    "years_experience":
-        candidate["profile"]["years_of_experience"],
-
     "current_title":
         candidate["profile"]["current_title"],
+
+    "years_experience":
+        candidate["profile"]["years_of_experience"],
 
     "industry":
         candidate["profile"]["current_industry"],
