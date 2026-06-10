@@ -3,7 +3,7 @@ import json
 with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
     candidate = json.loads(next(f))
 
-features = {
+candidate_features = {
     "candidate_id": candidate["candidate_id"],
 
     "title": candidate["profile"]["current_title"],
@@ -45,4 +45,4 @@ features = {
     ]
 }
 
-print(json.dumps(features, indent=4))
+# print(json.dumps(features, indent=4))
