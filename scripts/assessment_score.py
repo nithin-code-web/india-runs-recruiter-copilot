@@ -20,5 +20,5 @@ assessment_score, average_score = (
     )
 )
 
-print("Average Assessment:", average_score)
-print("Assessment Score:", assessment_score)
+# print("Average Assessment:", average_score)
+# print("Assessment Score:", assessment_score)

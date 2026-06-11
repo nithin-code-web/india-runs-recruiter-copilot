@@ -4,6 +4,7 @@ from extract_candidate_features import candidate_features
 from extract_job_features import job_features
 from skill_aliases import SKILL_ALIASES
 from career_score import calculate_career_score
+from assessment_score import calculate_assessment_score
 
 score = 0
 
@@ -51,6 +52,14 @@ career_score, found_keywords = calculate_career_score(
 
 score += career_score
 
+assessment_score, average_assessment = (
+    calculate_assessment_score(
+        candidate_features["assessment_scores"]
+    )
+)
+
+score += assessment_score
+
 
 
 print("\n=== MATCH RESULT ===\n")
@@ -68,5 +77,9 @@ print("\nCareer History:\n")
 print(f"Career Score: {career_score}")
 
 print(f"Career Keywords Found: {found_keywords}")
+
+print(f"Assessment Average: {average_assessment}")
+
+print(f"Assessment Score: {assessment_score}")
 
 print(f"\nFinal Score: {score}") 
