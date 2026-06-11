@@ -3,6 +3,7 @@ import json
 from extract_candidate_features import candidate_features
 from extract_job_features import job_features
 from skill_aliases import SKILL_ALIASES
+from career_score import calculate_career_score
 
 score = 0
 
@@ -42,13 +43,30 @@ if candidate_features["response_rate"] >= 0.30:
 
 score += behavior_score
 
+career_descriptions = candidate_features["career_descriptions"]
+
+career_score, found_keywords = calculate_career_score(
+    career_descriptions
+)
+
+score += career_score
+
+
+
 print("\n=== MATCH RESULT ===\n")
 
-print("Matched Skills:", matched_skills)
+print(f"Matched Skills: {matched_skills}")
 
 print(f"Skill Score: {skill_score}")
+
 print(f"Experience Score: {experience_score}")
+
 print(f"Behavior Score: {behavior_score}")
 
-print(f"\nFinal Score: {score}")
 print("\nCareer History:\n")
+
+print(f"Career Score: {career_score}")
+
+print(f"Career Keywords Found: {found_keywords}")
+
+print(f"\nFinal Score: {score}") 

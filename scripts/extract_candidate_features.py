@@ -42,6 +42,9 @@ candidate_features = {
     
     "industry": [job["industry"]
         for job in candidate["career_history"]
+    ],
+    "career_descriptions": [job["description"]
+        for job in candidate["career_history"]
     ]
 }
 
