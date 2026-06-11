@@ -52,4 +52,3 @@ print(f"Behavior Score: {behavior_score}")
 
 print(f"\nFinal Score: {score}")
 print("\nCareer History:\n")
-
