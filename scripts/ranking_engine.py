@@ -2,6 +2,7 @@ from career_score import calculate_career_score
 from assessment_score import calculate_assessment_score
 from generate_explanation import generate_explanation
 from skill_aliases import SKILL_ALIASES
+from title_score import calculate_title_score
 
 
 def calculate_candidate_score(candidate_features, job_features):
@@ -43,6 +44,10 @@ def calculate_candidate_score(candidate_features, job_features):
         behavior_score += 5
 
     score += behavior_score
+    
+    title_score = calculate_title_score(candidate_features["title"])
+    score += title_score
+    
 
     career_score, found_keywords = calculate_career_score(
         candidate_features["career_descriptions"]
@@ -66,6 +71,7 @@ def calculate_candidate_score(candidate_features, job_features):
 
     return {
         "score": score,
+        "title_score": title_score,
         "strengths": strengths,
         "risks": risks,
         "matched_skills": list(matched_skills)
