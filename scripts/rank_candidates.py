@@ -53,7 +53,8 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
             "candidate_id": candidate["candidate_id"],
             "title": candidate_features["title"],
             "score": result["score"],
-            "title_score": result["title_score"]
+            "title_score": result["title_score"],
+            "relevance_score": result["relevance_score"],
         })
 
 results.sort(
@@ -70,5 +71,7 @@ for rank, candidate in enumerate(results[:10], start=1):
         f"{candidate['candidate_id']} | "
         f"{candidate['title']} | "
         f"Score: {candidate['score']} | "
-        f"Title Score: {candidate['title_score']}"
+        f"Title Score: {candidate['title_score']}  | " 
+        f"Relevance Score: {candidate['relevance_score']}"
+        
     )
