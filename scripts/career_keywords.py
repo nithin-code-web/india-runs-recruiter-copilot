@@ -31,5 +31,13 @@ CAREER_KEYWORDS = {
         "fine-tuning",
         "lora",
         "qlora"
+    ],
+    "data_engineering": [
+        "spark",
+        "airflow",
+        "kafka",
+        "pipeline",
+        "pipelines",
+        "warehouse"
     ]
 }
