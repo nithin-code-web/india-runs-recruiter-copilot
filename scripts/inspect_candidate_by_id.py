@@ -1,8 +1,8 @@
 import json
 
 TARGET_IDS = [
-    "CAND_0000031",
-    "CAND_0000084"
+    "CAND_0000082",
+    "CAND_0000069"
 ]
 
 with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
