@@ -1,8 +1,9 @@
 import json
+from relevance_score import count_ai_keywords
 
 TARGET_IDS = [
-    "CAND_0000021",
-    "CAND_0000074"
+    
+    "CAND_0000069"
 ]
 
 with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
@@ -53,3 +54,13 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
                 print(job["description"])
 
                 print("-" * 40)
+                
+
+            career_text = " ".join(
+                    [job["description"] for job in candidate["career_history"]]
+                )
+
+            score, keywords = count_ai_keywords(career_text)
+
+            print("\nCareer Relevance Score:", score)
+            print("Matched Keywords:", keywords)    

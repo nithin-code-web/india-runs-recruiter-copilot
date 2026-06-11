@@ -3,7 +3,7 @@ from assessment_score import calculate_assessment_score
 from generate_explanation import generate_explanation
 from skill_aliases import SKILL_ALIASES
 from title_score import calculate_title_score
-from relevance_score import calculate_relevance_score
+from relevance_score import count_ai_keywords
 
 def calculate_candidate_score(candidate_features, job_features):
 
@@ -69,17 +69,44 @@ def calculate_candidate_score(candidate_features, job_features):
         average_assessment
     )
     
-    relevant_text = " ".join([
-        candidate_features["title"],
-        " ".join(candidate_features["skills"]),
-        " ".join(candidate_features["career_descriptions"])
-        ])
-    
-    relevance_score, matched_ai_keywords = (
-        calculate_relevance_score(relevant_text)
+    skills_text = " ".join(
+        candidate_features["skills"]
     )
-    score += relevance_score
 
+    career_text = " ".join(
+        candidate_features["career_descriptions"]
+    )
+
+    skills_relevance_score, skill_keywords = (
+        count_ai_keywords(skills_text)
+    )
+
+    career_relevance_score, career_keywords = (
+        count_ai_keywords(career_text)
+    )
+
+    relevance_score = (
+        skills_relevance_score // 5
+    ) + (
+        career_relevance_score * 3
+    )
+
+    matched_ai_keywords = (
+      skill_keywords +
+      career_keywords
+    )
+
+    score += relevance_score
+    print("\nDEBUG")
+
+    print("Title:", candidate_features["title"])
+
+    print("Skills Relevance:", skills_relevance_score)
+
+    print("Career Relevance:", career_relevance_score)
+
+    print("Final Relevance:", relevance_score)
+    
     return {
         "score": score,
         "title_score": title_score,
