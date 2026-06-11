@@ -5,6 +5,7 @@ from extract_job_features import job_features
 from skill_aliases import SKILL_ALIASES
 from career_score import calculate_career_score
 from assessment_score import calculate_assessment_score
+from generate_explanation import generate_explanation
 
 score = 0
 
@@ -60,6 +61,12 @@ assessment_score, average_assessment = (
 
 score += assessment_score
 
+strengths, risks = generate_explanation(
+    candidate_features,
+    found_keywords,
+    average_assessment
+)
+
 
 
 print("\n=== MATCH RESULT ===\n")
@@ -83,3 +90,13 @@ print(f"Assessment Average: {average_assessment}")
 print(f"Assessment Score: {assessment_score}")
 
 print(f"\nFinal Score: {score}") 
+
+print("\nStrengths:")
+
+for strength in strengths:
+    print(f"✓ {strength}")
+
+print("\nRisks:")
+
+for risk in risks:
+    print(f"⚠ {risk}")
