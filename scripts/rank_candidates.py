@@ -92,7 +92,8 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
             "title_score": result["title_score"],
             "relevance_score": result["relevance_score"],
             "strengths" : result["strengths"],
-            "risks": result["risks"]
+            "risks": result["risks"],
+            "availability": result["availability"],
         })
 
 # Sort candidates by overall score in descending order (highest scoring first)
@@ -121,6 +122,12 @@ for rank, candidate in enumerate(results[:10], start=1):
     for strength in candidate["strengths"]:
 
         print(f"✓ {strength}")
+        
+    print("\nAvailability:")
+    
+    for item in candidate["availability"]:
+        
+        print(f"📅 {item}")    
 
     print("\nRisks:")
 

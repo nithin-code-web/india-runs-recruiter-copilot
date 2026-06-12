@@ -161,7 +161,7 @@ def calculate_candidate_score(candidate_features, job_features):
     
     # ===== GENERATE SUMMARY =====
     # Create human-readable strengths and risks assessment (see generate_candidate_summary.py)
-    strengths, risks = generate_candidate_summary(
+    strengths, risks, availability = generate_candidate_summary(
         candidate_features,
         list(matched_skills),
         matched_ai_keywords
@@ -176,5 +176,6 @@ def calculate_candidate_score(candidate_features, job_features):
         "matched_ai_keywords": matched_ai_keywords,
         "strengths": strengths,
         "risks": risks,
+        "availability": availability,
         "matched_skills": list(matched_skills)
     }

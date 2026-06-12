@@ -21,6 +21,7 @@ def generate_candidate_summary(candidate_features,
     """
     strengths = []  # Positive attributes
     risks = []  # Risk factors
+    availability = [] # Availability signals
 
     # ===== EXPERIENCE STRENGTH =====
     if candidate_features["experience"] >= 5:
@@ -30,8 +31,8 @@ def generate_candidate_summary(candidate_features,
 
     # ===== AVAILABILITY STRENGTH =====
     if candidate_features["open_to_work"]:
-        strengths.append(
-            "Actively looking for new opportunity"  # Actively looking for new opportunity
+        availability.append(
+            "Open to work"  # Actively looking for new opportunity
         )
 
     # ===== MATCHED SKILLS STRENGTHS =====
@@ -78,12 +79,20 @@ def generate_candidate_summary(candidate_features,
 
 
     # ===== AVAILABILITY RISK =====
+    
     # Candidates with long notice periods may take time to join
-    if candidate_features.get("notice_period", 0) > 30:
-        risks.append(
-            f"Long notice period ({candidate_features['notice_period']} days)"  # Slow onboarding
+    if candidate_features.get("notice_period", 0) > 0:
+
+        availability.append(
+            f"Notice period: {candidate_features['notice_period']} days"
         )
 
+    if candidate_features["notice_period"] > 30:
+
+        risks.append(
+            f"Long notice period ({candidate_features['notice_period']} days)"
+        )
+        
     # ===== ENGAGEMENT RISK =====
     # Low response rate indicates lower engagement with recruiters
     if candidate_features["response_rate"] < 0.20:
@@ -91,4 +100,4 @@ def generate_candidate_summary(candidate_features,
             "Low recruiter response rate"  # May be unresponsive
         )
 
-    return strengths, risks
+    return strengths, risks, availability
