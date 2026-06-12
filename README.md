@@ -52,15 +52,29 @@ Built a multi-signal ranking engine that combines:
 
 ## Project Structure
 
-project/
+india-runs-recruiter-copilot/
+
+├── data/
+├── docs/
+│   ├── architecture.md
+│   └── results.md
+│
+├── outputs/
+│   └── top_candidates.json
 │
 ├── scripts/
-├── docs/
-├── outputs/
-├── data/
+│   ├── extract_candidate_features.py
+│   ├── extract_job_features.py
+│   ├── ranking_engine.py
+│   ├── rank_candidates.py
+│   ├── export_results.py
+│   ├── generate_candidate_summary.py
+│   ├── career_score.py
+│   ├── title_score.py
+│   ├── relevance_score.py
+│   └── skill_aliases.py
+│
 └── README.md
-
----
 
 ## Architecture
 
