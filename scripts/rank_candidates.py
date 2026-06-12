@@ -121,13 +121,17 @@ for rank, candidate in enumerate(results[:10], start=1):
 
     for strength in candidate["strengths"]:
 
-        print(f"✓ {strength}")
+        print(f"✅ {strength}")
         
     print("\nAvailability:")
     
     for item in candidate["availability"]:
         
-        print(f"📅 {item}")    
+        if "Notice period" in item:
+            print(f"📅 {item}")
+        else:
+            print(f"✅ {item}")    
+            
 
     print("\nRisks:")
 

@@ -5,16 +5,19 @@
         "title": "Senior Applied Scientist",
         "score": 333,
         "strengths": [
-            "16.2 years experience",
+            "16.2 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Python",
+            "Strong match in: Retrieval Systems",
+            "Worked on ranking systems",
+            "Experience with recommendation engines",
+            "Built retrieval systems",
+            "Experience with embedding-based search",
+            "Experience with Pinecone vector databases"
+        ],
+        "availability": [
             "Open to work",
-            "Matched skill: Vector Databases",
-            "Matched skill: Retrieval Systems",
-            "Matched skill: Python",
-            "AI signal: ranking",
-            "AI signal: recommendation",
-            "AI signal: retrieval",
-            "AI signal: embeddings",
-            "AI signal: pinecone"
+            "Notice period: 30 days"
         ],
         "risks": []
     },
@@ -24,16 +27,19 @@
         "title": "Senior NLP Engineer",
         "score": 332,
         "strengths": [
-            "8.9 years experience",
+            "8.9 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Python",
+            "Strong match in: Retrieval Systems",
+            "Experience with Pinecone vector databases",
+            "Worked on ranking systems",
+            "Experience with recommendation engines",
+            "Built retrieval systems",
+            "Experience with embedding-based search"
+        ],
+        "availability": [
             "Open to work",
-            "Matched skill: Vector Databases",
-            "Matched skill: Retrieval Systems",
-            "Matched skill: Python",
-            "AI signal: pinecone",
-            "AI signal: ranking",
-            "AI signal: recommendation",
-            "AI signal: retrieval",
-            "AI signal: embeddings"
+            "Notice period: 30 days"
         ],
         "risks": []
     },
@@ -43,16 +49,19 @@
         "title": "AI Engineer",
         "score": 327,
         "strengths": [
-            "16.9 years experience",
+            "16.9 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Embeddings",
+            "Strong match in: Retrieval Systems",
+            "Built retrieval systems",
+            "Experience with embedding-based search",
+            "Experience with FAISS vector search",
+            "Experience with Milvus vector databases",
+            "Worked on ranking systems"
+        ],
+        "availability": [
             "Open to work",
-            "Matched skill: Vector Databases",
-            "Matched skill: Embeddings",
-            "Matched skill: Retrieval Systems",
-            "AI signal: retrieval",
-            "AI signal: embeddings",
-            "AI signal: faiss",
-            "AI signal: milvus",
-            "AI signal: ranking"
+            "Notice period: 60 days"
         ],
         "risks": [
             "Long notice period (60 days)"
@@ -64,14 +73,17 @@
         "title": "Search Engineer",
         "score": 323,
         "strengths": [
-            "7.8 years experience",
-            "Matched skill: Vector Databases",
-            "Matched skill: Python",
-            "AI signal: ranking",
-            "AI signal: recommendation",
-            "AI signal: retrieval",
-            "AI signal: embeddings",
-            "AI signal: pinecone"
+            "7.8 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Python",
+            "Worked on ranking systems",
+            "Experience with recommendation engines",
+            "Built retrieval systems",
+            "Experience with embedding-based search",
+            "Experience with Pinecone vector databases"
+        ],
+        "availability": [
+            "Notice period: 45 days"
         ],
         "risks": [
             "Long notice period (45 days)"
@@ -83,16 +95,19 @@
         "title": "Senior AI Engineer",
         "score": 319,
         "strengths": [
-            "7.8 years experience",
+            "7.8 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Embeddings",
+            "Strong match in: Retrieval Systems",
+            "Built retrieval systems",
+            "Experience with embedding-based search",
+            "Experience with Pinecone vector databases",
+            "Worked on ranking systems",
+            "Experience with recommendation engines"
+        ],
+        "availability": [
             "Open to work",
-            "Matched skill: Vector Databases",
-            "Matched skill: Embeddings",
-            "Matched skill: Retrieval Systems",
-            "AI signal: retrieval",
-            "AI signal: embeddings",
-            "AI signal: pinecone",
-            "AI signal: ranking",
-            "AI signal: recommendation"
+            "Notice period: 45 days"
         ],
         "risks": [
             "Long notice period (45 days)"
@@ -104,14 +119,17 @@
         "title": "AI Engineer",
         "score": 304,
         "strengths": [
-            "6.4 years experience",
-            "Matched skill: Vector Databases",
-            "Matched skill: Retrieval Systems",
-            "AI signal: recommendation",
-            "AI signal: faiss",
-            "AI signal: ranking",
-            "AI signal: recommendation",
-            "AI signal: retrieval"
+            "6.4 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Retrieval Systems",
+            "Experience with recommendation engines",
+            "Experience with FAISS vector search",
+            "Worked on ranking systems",
+            "Built retrieval systems",
+            "Experience with embedding-based search"
+        ],
+        "availability": [
+            "Notice period: 15 days"
         ],
         "risks": []
     },
@@ -121,16 +139,19 @@
         "title": "Search Engineer",
         "score": 301,
         "strengths": [
-            "6.0 years experience",
-            "Matched skill: Vector Databases",
-            "Matched skill: Embeddings",
-            "Matched skill: Retrieval Systems",
-            "Matched skill: Python",
-            "AI signal: embeddings",
-            "AI signal: faiss",
-            "AI signal: milvus",
-            "AI signal: ranking",
-            "AI signal: recommendation"
+            "6.0 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Python",
+            "Strong match in: Embeddings",
+            "Strong match in: Retrieval Systems",
+            "Experience with embedding-based search",
+            "Experience with FAISS vector search",
+            "Experience with Milvus vector databases",
+            "Worked on ranking systems",
+            "Experience with recommendation engines"
+        ],
+        "availability": [
+            "Notice period: 60 days"
         ],
         "risks": [
             "Long notice period (60 days)"
@@ -142,16 +163,19 @@
         "title": "Recommendation Systems Engineer",
         "score": 300,
         "strengths": [
-            "7.7 years experience",
+            "7.7 years of professional experience",
+            "Strong match in: Vector Databases",
+            "Strong match in: Embeddings",
+            "Strong match in: Retrieval Systems",
+            "Experience with recommendation engines",
+            "Experience with embedding-based search",
+            "Worked on ranking systems",
+            "Built retrieval systems",
+            "Experience with FAISS vector search"
+        ],
+        "availability": [
             "Open to work",
-            "Matched skill: Vector Databases",
-            "Matched skill: Embeddings",
-            "Matched skill: Retrieval Systems",
-            "AI signal: recommendation",
-            "AI signal: embeddings",
-            "AI signal: ranking",
-            "AI signal: recommendation",
-            "AI signal: retrieval"
+            "Notice period: 120 days"
         ],
         "risks": [
             "Long notice period (120 days)"
@@ -163,14 +187,17 @@
         "title": "Machine Learning Engineer",
         "score": 293,
         "strengths": [
+            "Strong match in: Vector Databases",
+            "Strong match in: Retrieval Systems",
+            "Built retrieval systems",
+            "Experience with Pinecone vector databases",
+            "Experience with FAISS vector search",
+            "Experience with Milvus vector databases",
+            "Worked on ranking systems"
+        ],
+        "availability": [
             "Open to work",
-            "Matched skill: Vector Databases",
-            "Matched skill: Retrieval Systems",
-            "AI signal: retrieval",
-            "AI signal: pinecone",
-            "AI signal: faiss",
-            "AI signal: milvus",
-            "AI signal: ranking"
+            "Notice period: 90 days"
         ],
         "risks": [
             "Long notice period (90 days)"
@@ -182,13 +209,16 @@
         "title": "Machine Learning Engineer",
         "score": 289,
         "strengths": [
+            "Strong match in: Vector Databases",
+            "Worked on ranking systems",
+            "Experience with recommendation engines",
+            "Built retrieval systems",
+            "Experience with embedding-based search",
+            "Experience with FAISS vector search"
+        ],
+        "availability": [
             "Open to work",
-            "Matched skill: Vector Databases",
-            "AI signal: ranking",
-            "AI signal: recommendation",
-            "AI signal: retrieval",
-            "AI signal: embeddings",
-            "AI signal: faiss"
+            "Notice period: 60 days"
         ],
         "risks": [
             "Long notice period (60 days)"

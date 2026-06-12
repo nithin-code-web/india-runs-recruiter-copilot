@@ -18,6 +18,7 @@ for rank, candidate in enumerate(results[:10], start=1):
         "title": candidate["title"],
         "score": candidate["score"],
         "strengths": candidate["strengths"],
+        "availability": candidate["availability"],
         "risks": candidate["risks"]
     })
 

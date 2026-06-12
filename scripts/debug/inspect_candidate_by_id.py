@@ -2,8 +2,8 @@ import json
 from relevance_score import count_ai_keywords
 
 TARGET_IDS = [
-    
-    "CAND_0000069"
+    "CAND_0001610",
+    "CAND_0013613"
 ]
 
 with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
