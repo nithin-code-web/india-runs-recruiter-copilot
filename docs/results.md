@@ -2,7 +2,7 @@
 
 ## Objective
 
-The goal of this project was to build an AI Recruiter Copilot capable of ranking candidates for an AI-focused engineering role using multiple signals rather than relying solely on keyword matching.
+The goal of this project was to build an Recruiter Copilot capable of ranking candidates for an AI-focused engineering role using multiple signals rather than relying solely on keyword matching.
 
 The system evaluates candidates using skills, experience, assessments, behavioral signals, title relevance, career history, and AI-domain expertise.
 

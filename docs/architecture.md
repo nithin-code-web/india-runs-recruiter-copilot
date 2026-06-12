@@ -2,7 +2,7 @@
 
 ## Overview
 
-The AI Recruiter Copilot is a candidate ranking and screening system designed to help recruiters identify the most relevant candidates for an AI-focused engineering role.
+The Recruiter Copilot is a candidate ranking and screening system designed to help recruiters identify the most relevant candidates for an AI-focused engineering role.
 
 The system processes large candidate datasets, extracts relevant profile information, evaluates candidates using a multi-factor scoring engine, and produces ranked recommendations with human-readable explanations.
 

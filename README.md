@@ -1,8 +1,35 @@
-# AI Recruiter Copilot
+<div align="center">
 
-An AI-powered candidate ranking and screening system designed to help recruiters identify the most relevant candidates for AI-focused engineering roles.
+# Recruiter Copilot
 
-The system evaluates candidate profiles using multiple signals including skills, experience, career history, assessments, behavioral indicators, title relevance, and AI-domain expertise to produce explainable candidate rankings.
+### Explainable Candidate Ranking Engine
+
+<img src="https://img.shields.io/badge/Multi--Factor%20Ranking%20Engine-Recruiter%20Decision%20Support-purple?style=for-the-badge" />
+
+<br>
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Dataset](https://img.shields.io/badge/Dataset-100K_Candidates-orange)
+![Architecture](https://img.shields.io/badge/Architecture-Modular-green)
+![Backend](https://img.shields.io/badge/Focus-Backend_Engineering-purple)
+
+</div>
+
+An explainable candidate ranking and screening system designed to help recruiters identify the most relevant candidates using skills, experience, career history, assessments, and behavioral signals.
+
+The system evaluates candidate profiles using multiple signals including skills, experience, career history, assessments, behavioral indicators, title relevance, and domain-specific expertise to produce explainable candidate rankings.
+
+---
+
+## Project Metrics
+
+| Metric | Value |
+|----------|----------|
+| Candidates Ranked | 100,000 |
+| Ranking Signals | 7 |
+| Output Type | Explainable Rankings |
+| Architecture | Modular Pipeline |
 
 ---
 
@@ -23,7 +50,7 @@ This project addresses these challenges by combining multiple scoring signals in
 
 # Solution Overview
 
-The AI Recruiter Copilot processes candidate profiles and generates ranked recommendations using a multi-factor scoring system.
+The Recruiter Copilot ranking engine processes candidate profiles and generates ranked recommendations using a multi-factor scoring system.
 
 The system evaluates:
 
@@ -33,7 +60,7 @@ The system evaluates:
 * Career history
 * Assessment performance
 * Job title relevance
-* AI-specific expertise
+* Domain-specific expertise
 
 The final output includes:
 
@@ -41,6 +68,17 @@ The final output includes:
 * Strengths
 * Availability information
 * Risk indicators
+
+---
+
+# Highlights
+
+- Ranked and evaluated 100,000 candidate profiles
+- Built a multi-factor candidate scoring engine
+- Implemented skill alias matching for flexible candidate evaluation
+- Prioritized career evidence over self-reported skills
+- Generated recruiter-friendly strengths, availability, and risk summaries
+- Exported structured ranking results for downstream consumption
 
 ---
 
@@ -123,6 +161,32 @@ Examples:
 
 ---
 
+# Demo
+
+Example ranked candidate output:
+
+```text
+Rank #1
+
+Candidate ID: CAND_0039754
+Title: Senior Applied Scientist
+Score: 333
+
+Strengths:
+✓ 16.2 years of professional experience
+✓ Strong match in Retrieval Systems
+✓ Strong match in Vector Databases
+✓ Worked on ranking systems
+
+Availability:
+✓ Open to work
+📅 Notice period: 30 days
+
+Risks:
+No major risks found
+```
+
+---
 # System Architecture
 
 ```text
@@ -194,7 +258,7 @@ docs/architecture.md
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/nithin-code-web/india-runs-recruiter-copilot
 cd india-runs-recruiter-copilot
 ```
 
@@ -289,15 +353,31 @@ Potential future enhancements include:
 
 # Tech Stack
 
-* Python
-* JSONL Dataset Processing
-* Rule-Based Ranking Engine
-* Explainable AI-Inspired Scoring Framework
+| Category | Technology |
+|-----------|------------|
+| Language | Python |
+| Data Format | JSONL |
+| Processing | Data Extraction & Transformation |
+| Ranking Engine | Multi-Factor Rule-Based Scoring |
+| Documentation | Markdown |
+| Architecture | Modular Backend Pipeline |
 
 ---
 
+# Key Learnings
+
+Through this project I learned:
+
+- Designing explainable ranking systems
+- Building modular backend pipelines
+- Processing large datasets efficiently
+- Creating multi-factor scoring frameworks
+- Generating recruiter-friendly recommendations
+- Structuring maintainable Python applications
+
+---
 # Author
 
 Nithin Budime
 
-Built as part of an AI-powered recruiter screening and candidate ranking project focused on explainable hiring recommendations.
+Built as an explainable candidate ranking and recruiter decision-support system focused on transparent hiring recommendations.
