@@ -11,9 +11,8 @@ Components:
 - behavior_requirements: Positive engagement signals
 - negative_signals: Keywords indicating poor fit
 
-Target Position: AI/Ranking Systems Engineer
+Target Position: Senior AI Engineer (Ranking, Retrieval and Recommendation Systems)
 """
-import json
 
 # Dictionary containing all job requirements and preferences
 job_features = {
@@ -68,5 +67,3 @@ job_features = {
     ],
     
 }
-
-# print(json.dumps(job_features, indent=4))

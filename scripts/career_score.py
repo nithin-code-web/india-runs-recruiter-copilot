@@ -3,7 +3,8 @@
 Analyzes candidate career descriptions for relevant keywords.
 Indicates prior experience with job-domain concepts like ranking, retrieval, ML, etc.
 
-Scoring: +5 points per matched keyword category (one match per category)
+Scoring: +5 points per keyword category matched.
+Only one keyword match per category is counted.
 Categories: ranking, retrieval, recommendation, embeddings, ML, LLM, data_engineering
 """
 from career_keywords import CAREER_KEYWORDS  # Import keyword categories and keywords

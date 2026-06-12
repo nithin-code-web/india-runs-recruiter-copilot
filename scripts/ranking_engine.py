@@ -13,7 +13,8 @@ Scoring breakdown:
 - Assessment scores: up to variable points (from assessment_score.py)
 - AI keyword relevance: up to variable points (from relevance_score.py)
 
-Total scores typically range from 0-100+ depending on candidate quality.
+Total scores vary depending on candidate relevance and evidence signals.
+Higher scores indicate stronger alignment with the target role.
 """
 # Import scoring sub-modules
 from career_score import calculate_career_score  # Career history keyword matching
@@ -152,9 +153,8 @@ def calculate_candidate_score(candidate_features, job_features):
     )
 
     # Collect all detected AI keywords for display in candidate summary
-    matched_ai_keywords = (
-      skill_keywords +
-      career_keywords
+    matched_ai_keywords = sorted(
+      set(skill_keywords + career_keywords)
     )
 
     score += relevance_score

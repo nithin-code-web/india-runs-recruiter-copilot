@@ -1,7 +1,8 @@
 """AI KEYWORD RELEVANCE SCORING
 =====================================
 Detects AI/ML domain-specific keywords in skills and career history.
-Higher keyword counts indicate stronger domain expertise and role relevance.
+Weighted AI keywords indicate stronger domain expertise
+and relevance to AI/ML-focused roles.
 
 Keyword categories and weights:
 - Ranking systems: ranking, recommendation, learning-to-rank (10-12 pts)
@@ -64,11 +65,6 @@ def count_ai_keywords(text):
         if keyword in text:
             score += weight
             matched_keywords.append(keyword)
-            
-    # print("\nTEXT SAMPLE:")
-    # print(text[:200])
 
-    # print("\nMATCHED KEYWORDS:")
-    # print(matched_keywords)
 
     return score, matched_keywords

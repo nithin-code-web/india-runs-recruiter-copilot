@@ -89,8 +89,6 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
             "candidate_id": candidate["candidate_id"],
             "title": candidate_features["title"],
             "score": result["score"],
-            "title_score": result["title_score"],
-            "relevance_score": result["relevance_score"],
             "strengths" : result["strengths"],
             "risks": result["risks"],
             "availability": result["availability"],

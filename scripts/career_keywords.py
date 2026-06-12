@@ -23,7 +23,8 @@ CAREER_KEYWORDS = {
     # Information retrieval and search experience
     "retrieval": [
         "retrieval",
-        "search"
+        "search engineer",
+        "information retrieval"
     ],
 
     # Recommendation systems experience
