@@ -25,28 +25,57 @@ def generate_candidate_summary(candidate_features,
     # ===== EXPERIENCE STRENGTH =====
     if candidate_features["experience"] >= 5:
         strengths.append(
-            f"{candidate_features['experience']} years experience"
+            f"{candidate_features['experience']} years of professional experience"
         )
 
     # ===== AVAILABILITY STRENGTH =====
     if candidate_features["open_to_work"]:
         strengths.append(
-            "Open to work"  # Actively looking for new opportunity
+            "Actively looking for new opportunity"  # Actively looking for new opportunity
         )
 
     # ===== MATCHED SKILLS STRENGTHS =====
     # Show top 5 matched required skills
     for skill in matched_skills[:5]:
         strengths.append(
-            f"Matched skill: {skill}"
+            f"Strong match in: {skill}"
         )
-
+        
     # ===== AI DOMAIN SIGNALS =====
-    # Show top 5 AI-related keywords found in profile
-    for keyword in matched_ai_keywords[:5]:
-        strengths.append(
-            f"AI signal: {keyword}"  # Evidence of AI domain expertise
+
+    AI_SIGNAL_EXPLANATIONS = {
+    "pinecone": "Experience with Pinecone vector databases",
+    "faiss": "Experience with FAISS vector search",
+    "milvus": "Experience with Milvus vector databases",
+    "retrieval": "Built retrieval systems",
+    "ranking": "Worked on ranking systems",
+    "recommendation": "Experience with recommendation engines",
+    "embeddings": "Experience with embedding-based search",
+    "vector search": "Experience with vector search infrastructure",
+    "learning-to-rank": "Built learning-to-rank models",
+    "xgboost": "Experience with production ML ranking models",
+    "lightgbm": "Experience with production ML ranking models"
+    }
+
+    # Remove duplicate AI keywords while preserving order
+    unique_keywords = []
+
+    for keyword in matched_ai_keywords:
+
+        if keyword not in unique_keywords:
+            unique_keywords.append(keyword)
+
+
+    # Add top 5 unique AI signals
+    for keyword in unique_keywords[:5]:
+
+        explanation = AI_SIGNAL_EXPLANATIONS.get(
+            keyword,
+            f"AI expertise: {keyword}"
         )
+        strengths.append(explanation)
+
+
 
     # ===== AVAILABILITY RISK =====
     # Candidates with long notice periods may take time to join
