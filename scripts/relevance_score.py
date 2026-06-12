@@ -35,10 +35,10 @@ def count_ai_keywords(text):
 
             matched_keywords.append(keyword)
             
-    print("\nTEXT SAMPLE:")
-    print(text[:200])
+    # print("\nTEXT SAMPLE:")
+    # print(text[:200])
 
-    print("\nMATCHED KEYWORDS:")
-    print(matched_keywords)
+    # print("\nMATCHED KEYWORDS:")
+    # print(matched_keywords)
 
     return score, matched_keywords

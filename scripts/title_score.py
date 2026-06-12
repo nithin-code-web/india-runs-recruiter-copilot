@@ -1,11 +1,24 @@
 TITLE_BONUS = {
-    "Recommendation Systems Engineer": 20,
-    "Search Engineer": 20,
     "AI Engineer": 20,
+    "Senior AI Engineer": 25,
+
+    "Search Engineer": 20,
+
+    "Recommendation Systems Engineer": 20,
+
     "Machine Learning Engineer": 20,
-    "Applied ML Engineer": 15,
+    "ML Engineer": 20,
+
+    "Senior NLP Engineer": 20,
     "NLP Engineer": 15,
+
+    "AI Research Engineer": 20,
+
+    "Applied ML Engineer": 15,
+    "Senior Applied Scientist": 20,
+
     "Data Scientist": 10,
+
     "Backend Engineer": 5
 }
 

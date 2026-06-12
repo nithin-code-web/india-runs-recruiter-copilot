@@ -9,7 +9,7 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
 
     for i, line in enumerate(f):
 
-        if i >= 100:
+        if i >= 100000:  # Limit to first 100K candidates for efficiency
             break
 
         candidate = json.loads(line)
@@ -37,11 +37,20 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
 
             "open_to_work":
                 candidate["redrob_signals"]["open_to_work_flag"],
+            
+            "notice_period":
+                candidate["redrob_signals"]["notice_period_days"],
+            
+            "interview_completion_rate":
+                candidate["redrob_signals"]["interview_completion_rate"],
+                
+            "offer_acceptance_rate":
+                candidate["redrob_signals"]["offer_acceptance_rate"],
 
             "career_descriptions": [
                 job["description"]
                 for job in candidate["career_history"]
-            ]
+            ],
         }
 
         result = calculate_candidate_score(
@@ -55,6 +64,8 @@ with open("data/candidates.jsonl", "r", encoding="utf-8") as f:
             "score": result["score"],
             "title_score": result["title_score"],
             "relevance_score": result["relevance_score"],
+            "strengths" : result["strengths"],
+            "risks": result["risks"]
         })
 
 results.sort(
@@ -62,16 +73,34 @@ results.sort(
     reverse=True
 )
 
-print("\n=== TOP 10 CANDIDATES ===\n")
+print("\n=== TOP 5 CANDIDATES FROM 1L CANDIDATES ===\n")
 
-for rank, candidate in enumerate(results[:10], start=1):
+for rank, candidate in enumerate(results[:5], start=1):
 
-    print(
-        f"{rank}. "
-        f"{candidate['candidate_id']} | "
-        f"{candidate['title']} | "
-        f"Score: {candidate['score']} | "
-        f"Title Score: {candidate['title_score']}  | " 
-        f"Relevance Score: {candidate['relevance_score']}"
-        
-    )
+    print("\n" + "=" * 60)
+
+    print(f"Rank #{rank}")
+
+    print(f"Candidate ID: {candidate['candidate_id']}")
+
+    print(f"Title: {candidate['title']}")
+
+    print(f"Score: {candidate['score']}")
+
+    print("\nStrengths:")
+
+    for strength in candidate["strengths"]:
+
+        print(f"✓ {strength}")
+
+    print("\nRisks:")
+
+    if candidate["risks"]:
+
+        for risk in candidate["risks"]:
+
+            print(f"⚠ {risk}")
+
+    else:
+
+        print("No major risks found")
